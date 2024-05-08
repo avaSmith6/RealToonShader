@@ -19,5 +19,15 @@
 			}
 			ENDCG
 		}
+
+		Pass {
+			CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+			// Include the AdditionalShader file
+			#include "AdditionalShader.cginc"
+			ENDCG
+
+		}
 	}
 }

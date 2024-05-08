@@ -253,7 +253,7 @@ namespace Sigtrap.VrTunnellingPro {
 		private Material _matBlur;
 		private Material _matSkysphere;
 		private Mesh _meshSkysphere;
-
+		
 		private MeshRenderer[] _cageMrs;
 		private List<MeshFilter> _cageMfs = new List<MeshFilter>();
 		private List<Renderer> _maskObjects = new List<Renderer>();
@@ -427,7 +427,7 @@ namespace Sigtrap.VrTunnellingPro {
 		/// Use if adding/removing children from Cage Parent.
 		/// No need to call if moving/modifying/toggling existing children.
 		/// </summary>
-		public void UpdateCage(){
+		public void UpdateCage(){	
 			if (_cageParent == null){
 				_cageMrs = new MeshRenderer[0];
 				return;
