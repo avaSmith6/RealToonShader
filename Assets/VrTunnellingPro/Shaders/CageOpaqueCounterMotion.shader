@@ -12,7 +12,7 @@
 			CGPROGRAM
 			#pragma vertex vertTriplanar
 			#pragma fragment frag
-			#include "CageCommon.cginc"
+			#include "STCore.cginc"
 			
 			fixed4 frag (v2fTriplanar i) : SV_Target {
 				fixed4 col = triplanarCounterMotion(_MainTex, _MainTex_ST, i.cagePos, i.cageNrm) * _Color * _Brightness;

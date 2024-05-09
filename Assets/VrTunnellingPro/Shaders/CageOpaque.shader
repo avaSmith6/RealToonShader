@@ -12,7 +12,7 @@
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
-			#include "CageCommon.cginc"
+			#include "STCore.cginc"
 
 			fixed4 frag (v2f i) : SV_Target {
 				return tex2D(_MainTex, i.uv) * _Color * _Brightness;
@@ -20,14 +20,5 @@
 			ENDCG
 		}
 
-		Pass {
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
-			// Include the AdditionalShader file
-			#include "AdditionalShader.cginc"
-			ENDCG
-
-		}
 	}
 }

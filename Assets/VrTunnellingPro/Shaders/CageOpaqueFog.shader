@@ -12,7 +12,7 @@
 			CGPROGRAM
 			#pragma vertex vertFog
 			#pragma fragment frag
-			#include "CageCommon.cginc"
+			#include "STCore.cginc"
 			
 			fixed4 frag (v2fFog i) : SV_Target {
 				fixed4 col = tex2D(_MainTex, i.uv) * _Color * _Brightness;
