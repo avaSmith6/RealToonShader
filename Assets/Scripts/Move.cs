@@ -15,7 +15,7 @@ public class Move : MonoBehaviour
     {
         float horiz = Input.GetAxis("Horizontal");
         float vert = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.left * horiz * Time.deltaTime * 5.0f);
+        transform.Translate(Vector3.right * horiz * Time.deltaTime * 5.0f);
         transform.Translate(Vector3.forward * vert * Time.deltaTime * 5.0f);
 
     }
